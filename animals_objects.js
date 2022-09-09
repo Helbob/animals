@@ -38,8 +38,12 @@ function prepareObjects(jsonData) {
     let name = fullnameArr[0];
     animal.name = name;
 
-    //let desc = fullname.substring(2, 5);
-    //animal.desc = desc;
+    let desc = fullnameArr[1] + " " + fullnameArr[2];
+    animal.desc = desc;
+
+    let type = fullnameArr[3];
+    animal.type = type;
+
     console.log(fullnameArr);
   });
 
